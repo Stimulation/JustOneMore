@@ -9,11 +9,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class JustOneMore extends JavaPlugin implements Listener {
 	
 	public void onEnable() {
-	    Bukkit.getPluginManager().registerEvents(this, this);
-	}
-
+	    Bukkit.getPluginManager().registerEvents(this, this);}
 	@EventHandler
 	public void ping(ServerListPingEvent e) {
-		e.setMaxPlayers(e.getNumPlayers() + 1);
-	}
-}
+		e.setMaxPlayers(e.getNumPlayers() + 1);	}}
